@@ -65,6 +65,14 @@ Lista de comandos básicos utilizados en esta etapa:
 Esta práctica me sirvió para entender cómo trabaja un desarrollador. Conectar un proyecto local de Node.js con repositorios de Git, gestionar dependencias, entender cómo funciona el `.gitignore` y más pienso que son cosas útiles que me servirán en proyectos futuros
 
 
+## Información técnica añadida desde rama 2
+
+A continuación, se muestra el historial de commits de la rama main en este punto:
+d0014b9 (HEAD -> rama2-CesarValverde, origin/main, main) Comentario arriba del todo
+ae56c3e Nueva línea H2
+e8547ef Setup del proyecto inicial
+
+
 ## Información técnica añadida desde rama 1
 
 En esta sección se describen los principales comandos de Git utilizados durante la práctica:
