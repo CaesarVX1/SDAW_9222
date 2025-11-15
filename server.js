@@ -1,3 +1,6 @@
+// Servidor para prácticar SDAW de César Valverde Pardo
+// Tarea IDE - Servidor estático básico con Node.js
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
