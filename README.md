@@ -82,3 +82,24 @@ En esta sección se describen los principales comandos de Git utilizados durante
 - **git branch**: Permite crear, listar o eliminar ramas.
 - **git merge**: Fusiona los cambios de una rama en otra.
 - **git push**: Sube los commits locales a un repositorio remoto (como GitHub).
+
+### Reflexión personal sobre la tarea anterior
+
+Aprendí las bases del trabajo con repositorios distribuidos. Vi cómo inicializar un proyecto local con Node.js y Git, la importancia de gestionar dependencias y archivos ignorados con el `.gitignore`, y el flujo básico para conectar y sincronizar mi trabajo local con un repositorio
+
+
+## Información técnica añadida desde rama 3
+*   e42f0fc (HEAD -> rama3-CesarValverde, origin/main, gitlab/main, main) Merge pull request #2 from CaesarVX1/rama2-CesarValverde
+|\
+| *   5171721 Merge branch 'main' into rama2-CesarValverde
+| |\
+| |/
+|/|
+* |   f7f335d Merge pull request #1 from CaesarVX1/rama1-CesarValverde
+:
+|\
+| *   5171721 Merge branch 'main' into rama2-CesarValverde
+| |\
+| |/
+|/|
+* |   f7f335d Merge pull request #1 from CaesarVX1/rama1-CesarValverde
