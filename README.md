@@ -103,3 +103,15 @@ Aprendí las bases del trabajo con repositorios distribuidos. Vi cómo inicializ
 | |/
 |/|
 * |   f7f335d Merge pull request #1 from CaesarVX1/rama1-CesarValverde
+
+## Información técnica añadida desde rama 4
+
+En esta etapa se ha conectado el repositorio local existente con un segundo repositorio remoto alojado en GitLab. El procedimiento seguido ha sido:
+
+1.  **Creación del proyecto en GitLab:** Se ha creado un nuevo proyecto vacío y público en GitLab con el mismo nombre que el repositorio de GitHub (`SDAW_9222`).
+2.  **Añadir el remoto:** Se ha vinculado el repositorio local con el nuevo remoto de GitLab con:
+    `git remote add gitlab https://gitlab.com/CesarVPX01/sdaw_9222.git`
+3.  **Verificación:** Se comprueba que ambos remotos (`origin` y `gitlab`) están configurados con el comando:
+    `git remote -v`
+4.  **Sincronización inicial:** Se han subido los ficheros y el historial de commits al nuevo remoto manteniendo la estructura original con:
+    `git push gitlab main`
