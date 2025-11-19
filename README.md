@@ -83,17 +83,6 @@ En esta sección se describen los principales comandos de Git utilizados durante
 - **git merge**: Fusiona los cambios de una rama en otra.
 - **git push**: Sube los commits locales a un repositorio remoto (como GitHub).
 
-## Información técnica añadida desde rama 4
-
-En esta etapa se ha conectado el repositorio local existente con un segundo repositorio remoto alojado en GitLab. El procedimiento seguido ha sido:
-
-1.  **Creación del proyecto en GitLab:** Se ha creado un nuevo proyecto vacío y público en GitLab con el mismo nombre que el repositorio de GitHub (`SDAW_9222`).
-2.  **Añadir el remoto:** Se ha vinculado el repositorio local con el nuevo remoto de GitLab con:
-    `git remote add gitlab https://gitlab.com/CesarVPX01/sdaw_9222.git`
-3.  **Verificación:** Se comprueba que ambos remotos (`origin` y `gitlab`) están configurados con el comando:
-    `git remote -v`
-4.  **Sincronización inicial:** Se han subido los ficheros y el historial de commits al nuevo remoto manteniendo la estructura original con:
-    `git push gitlab main`
 ### Reflexión personal sobre la tarea anterior
 
 Aprendí las bases del trabajo con repositorios distribuidos. Vi cómo inicializar un proyecto local con Node.js y Git, la importancia de gestionar dependencias y archivos ignorados con el `.gitignore`, y el flujo básico para conectar y sincronizar mi trabajo local con un repositorio
@@ -115,28 +104,14 @@ Aprendí las bases del trabajo con repositorios distribuidos. Vi cómo inicializ
 |/|
 * |   f7f335d Merge pull request #1 from CaesarVX1/rama1-CesarValverde
 
-## Documentación Final: Múltiples Remotos
+## Información técnica añadida desde rama 4
 
-### 1. ¿Qué significa tener múltiples remotos?
-Tener múltiples remotos significa que un único repositorio local en nuestro equipo está vinculado a varios servidores externos (en este caso, GitHub y GitLab). Esto permite enviar ("push") y recibir ("pull") actualizaciones desde distintas plataformas simultáneamente, manteniendo el mismo historial de versiones en todas ellas.
+En esta etapa se ha conectado el repositorio local existente con un segundo repositorio remoto alojado en GitLab. El procedimiento seguido ha sido:
 
-### 2. Ventajas e inconvenientes
-**Ventajas:**
-* **Redundancia y seguridad:** Si un servicio (como GitHub) cae o perdemos la cuenta, tenemos una copia completa en otro servicio (GitLab).
-* **Flexibilidad:** Permite trabajar con equipos que prefieran diferentes plataformas o herramientas de CI/CD específicas de cada una.
-
-**Inconvenientes:**
-* **Complejidad de gestión:** Requiere mantener sincronizados ambos remotos manualmente (haciendo push a ambos).
-* **Conflictos:** Aumenta el riesgo de conflictos de fusión si se modifican los remotos por separado sin sincronizar antes, como hemos visto en la etapa anterior.
-
-### 3. Comandos utilizados en esta práctica
-Para completar el flujo de trabajo con múltiples remotos se han utilizado los siguientes comandos:
-
-* `git remote add <nombre> <url>`: Para vincular el nuevo remoto de GitLab.
-* `git remote -v`: Para verificar los remotos conectados.
-* `git push <remoto> <rama>`: Para subir cambios a un remoto específico (ej. `git push gitlab main`).
-* `git checkout -b <rama>`: Para crear y cambiar a las ramas de trabajo.
-* `git log --oneline --graph --all`: Para visualizar el historial y las ramificaciones.
-* `git merge <rama>`: Para fusionar las ramas de trabajo con la principal.
-* `git pull <remoto> <rama>`: Para descargar y fusionar cambios remotos en local.
-
+1.  **Creación del proyecto en GitLab:** Se ha creado un nuevo proyecto vacío y público en GitLab con el mismo nombre que el repositorio de GitHub (`SDAW_9222`).
+2.  **Añadir el remoto:** Se ha vinculado el repositorio local con el nuevo remoto de GitLab con:
+    `git remote add gitlab https://gitlab.com/CesarVPX01/sdaw_9222.git`
+3.  **Verificación:** Se comprueba que ambos remotos (`origin` y `gitlab`) están configurados con el comando:
+    `git remote -v`
+4.  **Sincronización inicial:** Se han subido los ficheros y el historial de commits al nuevo remoto manteniendo la estructura original con:
+    `git push gitlab main`
